@@ -1,0 +1,36 @@
+<section>
+  <!-- Paso 2: Interpolación de Signals-->
+  <h1>{{ fullName() }}</h1>
+  <p>Edad: {{ age() }} años</p>
+
+  <!-- Paso 5: Categoría de edad con @switch -->
+  @switch (ageCategory()) {
+    @case ('minor') { <p>Estado: <strong>Menor de edad</strong></p> }
+    @case ('young') { <p>Estado: <strong>Joven</strong></p> }
+    @case ('adult') { <p>Estado: <strong>Adulto</strong></p> }
+    @default { <p>Estado: <strong>Senior</strong></p> }
+  }
+
+  <!-- Paso 4: Listado de habilidades con @if y @for -->
+  <h3>Habilidades Técnicas:</h3>
+  @if (skills().length > 0) {
+    <ul>
+      @for (skill of skills(); track skill) {
+        <li>{{ skill }}</li>
+      }
+    </ul>
+  } @else {
+    <p>No hay habilidades registradas.</p>
+  }
+
+  <hr>
+
+  <!-- Paso 3: Botón para actualizar el estado (Signals .set) -->
+  <button type="button" (click)="changeData()">
+    Cambiar a Datos de Ana
+  </button>
+
+  <br><br>
+  <!-- Enlace para volver (Preparación paso 6) -->
+  <a href="/">Volver al Inicio</a>
+</section>
