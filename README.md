@@ -1,4 +1,4 @@
-# Práctica 1 - Configuración inicial de Angular
+# 01. Configuración inicial de Angular
 
 *Carolina Fortmann*
 
@@ -52,3 +52,41 @@ Esto nos retorna una página web del navegador: `http://localhost:4200/`. La apl
 ![Home page nueva](evidencias/assets/01-home-page.png)
 
 **Descripción:** Página después de los ajustes en las clases.
+
+# 02. Fundamentos de Angular
+
+## 1.- Descripción de la práctica:
+
+El objetivo fue extender la aplicación base para implementar una funcionalidad real, en este caso un Perfil de Usuario. Se utilizan las herramientas de Angular: Signals y Control Flow.
+
+- ```signal()```: Crea variables (nombre, edad, habilidades) que notifican a la aplicación cuando cambian.
+
+- ```set()```: Método usado en el botón para actualizar la información (de Juan a Ana).
+
+- ```computed()```: Crea valores que dependen de otros, como el *fullName* o *ageCategory*.
+
+- ```@if```: Para mostrar la lista de habilidades solo si hay datos.
+
+- ```@for```: Para recorrer el arreglo de habilidades y generar la lista automáticamente.
+
+- ```@switch```: Para clasificar al usuario según su edad.
+
+## 2.- Navegación entre páginas:
+
+Se configura la ruta para tener dos estados:
+
+- La página de inicio (/).
+
+- La página de perfil (/profile).
+
+Ambas se conectan mediante enlaces ```(<a>)``` para permitir que el usuario navegue.
+
+## 3.- Capturas:
+
+### 1. Nueva ruta - Juan:
+![Versión de Juan](evidencias/assets/02-profile-page.png)
+
+
+### 2. Actualización de datos - Ana:
+![Versión de Ana](evidencias/assets/02-profile-page2.png)
+
