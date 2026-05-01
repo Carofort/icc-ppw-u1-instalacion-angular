@@ -1,59 +1,54 @@
-# PpwAngular21
+# Práctica 1 - Configuración inicial de Angular
+
+*Carolina Fortmann*
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
 
-## Development server
+## 1.- Pasos importantes para la configuración:
 
-To start a local development server, run:
+Antes de comenzar, es necesario contar con las siguientes herramientas instaladas en el sistema:
 
+- **Node.js:** Motor de ejecución para JavaScript. Fue descargado en: [nodejs.org](https://nodejs.org/).
+- **pnpm:** Gestor de paquetes eficiente. Se instala mediante el comando dentro del cmd:
+    ```bash
+    npm install -g pnpm
+    ```
+- **Angular CLI (v21+):** Interfaz de línea de comandos de Angular. Instalado en el cmd:
+    ```bash
+    pnpm add -g @angular/cli
+    ```
+
+### 2.- Creación del proyecto en VSC:
+
+Se emplearon los siguientes comandos dentro del terminal de una carpeta previamente creada:
 ```bash
-ng serve
+ng new ppw-angular-21 --routing --style=scss --ssr=false
+cd ppw-angular-21
+pnpm install
+pnpm start
 ```
+Esto nos retorna una página web del navegador: `http://localhost:4200/`. La aplicación se encarga de actualizar automáticamente esta página cada vez que se modifica algún archivo.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 3.- Capturas:
 
-## Code scaffolding
+### 1. Salida de ```ng version``` en el terminal:
+![Versión de Angular](evidencias/assets/01-ng-version.png)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+**Descripción:** Se verifica la versión actual de Angular que fue previamente instalado.
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 2. Proceso de creación del proyecto con Angular CLI:
+![Creación del proyecto en CLI](evidencias/assets/01-ng-new.png)
 
-```bash
-ng generate --help
-```
+**Descripción:** Se ejecuta el comando de creación del proyecto.
 
-## Building
+### 3. Página de bienvenida de Angular antes de modificar:
+![Página de bienvenida de Angular](evidencias/assets/01-app-inicio.png)
 
-To build the project run:
+**Descripción:** Página inicial de bienvenida en localhost:42000.
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 4. HomePage funcionando en ```localhost:4200```:
+![Home page nueva](evidencias/assets/01-home-page.png)
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Descripción:** Página después de los ajustes en las clases.
